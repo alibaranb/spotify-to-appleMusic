@@ -1,2 +1,2 @@
 # spotify-to-appleMusic
-A program designed for transfering your spotify playlists to apple music.
+This program is designed for transfering your spotify playlists to apple music.
