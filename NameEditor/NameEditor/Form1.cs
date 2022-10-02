@@ -61,5 +61,23 @@ namespace NameEditor
                 System.Windows.Forms.MessageBox.Show(ex.ToString(), "Hata!");
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Keyword to remove";
+            label2.Text = "Folder path";
+            button1.Text = "Choose folder";
+            button2.Text = "Remove";
+            button3.Text = "Fix artist names";
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            label1.Text = "Ne silmek istiyorsunuz?";
+            label2.Text = "Klasör yolu";
+            button1.Text = "Klasör seç";
+            button2.Text = "Sil";
+            button3.Text = "Sanatçý isimlerini düzelt";
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -104,17 +105,32 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(404, 223);
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Location = new System.Drawing.Point(396, 222);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(24, 24);
+            this.button4.Size = new System.Drawing.Size(32, 24);
             this.button4.TabIndex = 6;
+            this.button4.Text = "EN";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Location = new System.Drawing.Point(358, 222);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(32, 24);
+            this.button5.TabIndex = 6;
+            this.button5.Text = "TR";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(440, 258);
+            this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
@@ -123,8 +139,10 @@
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Fraction - Prefix Name Editor";
+            this.Text = "Fraction - Spotify to Apple Music";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +158,6 @@
         private Label label2;
         private Button button3;
         private Button button4;
+        private Button button5;
     }
 }
