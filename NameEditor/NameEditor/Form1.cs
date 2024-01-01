@@ -7,7 +7,7 @@ namespace NameEditor
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btn_ChoosePath_Click(object sender, EventArgs e)
         {
             using (var fbd = new FolderBrowserDialog())
             {
@@ -17,14 +17,14 @@ namespace NameEditor
                 {
                     string[] files = Directory.GetFiles(fbd.SelectedPath);
 
-                    System.Windows.Forms.MessageBox.Show(files.Length.ToString() + " tane dosya bulundu!" , "Mesaj");
+                    System.Windows.Forms.MessageBox.Show(files.Length.ToString() + " tane dosya bulundu!", "Mesaj");
 
                     textBox1.Text = fbd.SelectedPath;
                 }
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void btn_Remove_Click(object sender, EventArgs e)
         {
             try
             {
@@ -41,9 +41,8 @@ namespace NameEditor
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btn_FixArtist_Click(object sender, EventArgs e)
         {
-            
             try
             {
                 DirectoryInfo d = new DirectoryInfo(textBox1.Text.ToString());
@@ -54,7 +53,7 @@ namespace NameEditor
                     tfile.Tag.AlbumArtists = new string[] { tfile.Tag.Performers[0] };
                     tfile.Save();
                 }
-                
+
             }
             catch (Exception ex)
             {
@@ -62,22 +61,22 @@ namespace NameEditor
             }
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void btn_LanEN_Click(object sender, EventArgs e)
         {
             label1.Text = "Keyword to remove";
             label2.Text = "Folder path";
-            button1.Text = "Choose folder";
-            button2.Text = "Remove";
-            button3.Text = "Fix artist names";
+            btn_ChoosePath.Text = "Choose folder";
+            btn_Remove.Text = "Remove";
+            btn_FixArtist.Text = "Fix artist names";
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void btn_LanTR_Click(object sender, EventArgs e)
         {
             label1.Text = "Ne silmek istiyorsunuz?";
             label2.Text = "Klasör yolu";
-            button1.Text = "Klasör seç";
-            button2.Text = "Sil";
-            button3.Text = "Sanatçý isimlerini düzelt";
+            btn_ChoosePath.Text = "Klasör seç";
+            btn_Remove.Text = "Sil";
+            btn_FixArtist.Text = "Sanatçý isimlerini düzelt";
         }
     }
 }
