@@ -1,7 +1,7 @@
 # spotify-to-appleMusic
 Designed to transfer your spotify playlists to apple music.
 
-Lets assume you are using a Spotify Downloader Website to download your Spotify Albums. You most likely will get your music names likes in the picture below.
+Lets assume you are using a Spotify Downloader Website to download your Spotify Albums. You most likely will get your music names like in the picture below.
 
 ![Uygulama Ekran Görüntüsü](https://i.postimg.cc/76JngdL4/1.png)
 
